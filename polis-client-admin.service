@@ -1,0 +1,11 @@
+[Unit]
+Description=Polis Client Admin
+After=network.target
+
+[Service]
+Type=forking
+WorkingDirectory=/home/andrebsguedes/software/polis/polisClientAdmin
+ExecStart=/bin/sh run.sh
+
+[Install]
+WantedBy=multi-user.target
